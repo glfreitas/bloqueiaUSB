@@ -1,0 +1,54 @@
+object FormUSBLocker: TFormUSBLocker
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = '.:: USB Locker'
+  ClientHeight = 110
+  ClientWidth = 218
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RadioGroup1: TRadioGroup
+    Left = 8
+    Top = 8
+    Width = 201
+    Height = 57
+    Caption = ' Op'#231#245'es da USB '
+    Columns = 2
+    ItemIndex = 0
+    Items.Strings = (
+      'Bloquear'
+      'Liberar')
+    TabOrder = 0
+  end
+  object BitBtn1: TBitBtn
+    Left = 8
+    Top = 72
+    Width = 201
+    Height = 33
+    Caption = 'Aplicar'
+    Glyph.Data = {
+      42010000424D42010000000000005200000028000000100000000F0000000100
+      080000000000F0000000120B0000120B0000070000000700000000000000FFFF
+      FF009C8C6F0019A64D000C4D240000C09200FFFFFF0001010101010101010101
+      0101010101010101010102020201010101010101010101010102000002020101
+      0101010101010101010004040002020101010101010101010200030304000202
+      0101010101010101000303050304000202010101010101020003050005030400
+      0202010101010100030500000005030400020201010101000303000101000503
+      0400020201010101000001010101000503040002020101010101010101010100
+      0503040002010101010101010101010100050304000101010101010101010101
+      0100050300010101010101010101010101010000010101010101010101010101
+      010101010101}
+    TabOrder = 1
+    OnClick = BitBtn1Click
+  end
+end
